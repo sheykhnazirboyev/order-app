@@ -1,11 +1,15 @@
+import { Container, Paper } from "@mui/material";
 import DataTable from "./DataTable";
+import CreateOrder from "./CreateOrder";
 
 function Home() {
   return (
-    <div>
-      <h1>Home page</h1>
-      <DataTable />
-    </div>
+    <Container>
+      <CreateOrder />
+      <Paper>
+        <DataTable />
+      </Paper>
+    </Container>
   );
 }
 

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "./components/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./components/Home";
+import { Demo } from "./components/Demo";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1>404 Error - Not Found</h1>,
+    element: <Demo />,
   },
 ]);
 
